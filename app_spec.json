@@ -1,0 +1,129 @@
+{
+  "name": "range_batch_planner",
+  "org": "com.alinxs.apps",
+  "title": "Range Batch Planner",
+  "description": "Divide an inclusive integer range into balanced contiguous batches entirely offline.",
+  "korean_summary": "연속된 정수 범위를 지정한 개수의 균형 잡힌 작업 묶음으로 나누고 각 묶음의 시작값, 끝값, 항목 수를 오프라인에서 보여 주는 도구입니다. 계정이나 서버 저장 없이 입력과 결과를 기기 안에서만 처리하며, 작업을 가리지 않는 표준 크기 AdMob 배너 하나만 표시합니다.",
+  "design_system": {
+    "style": "minimal_material",
+    "seed_color": "#315C8C",
+    "theme_mode": "system",
+    "density": "compact",
+    "corner_style": "medium",
+    "motion": "subtle"
+  },
+  "icon": {
+    "version": 1,
+    "primary": "sequence_gap",
+    "secondary": "balanced_blocks",
+    "foreground": "#FFFFFF",
+    "composition": "centered_safe_zone",
+    "background": "#315C8C",
+    "source": null
+  },
+  "requirements": "Build a compact English-first Flutter Android utility whose first phone viewport explains that it divides an inclusive whole-number range into balanced contiguous batches and shows Start number, End number, Number of batches, and one obvious Plan batches action above the footer and banner. Accept signed integers for the start and end, require the end to be greater than or equal to the start, limit the inclusive range to at most 1,000,000 values, and accept from 1 to 1,000 batches without allowing more batches than values. Divide the inclusive value count by the requested batch count using integer quotient and remainder: assign one extra value to each earliest batch until the remainder is exhausted, preserve full coverage and ascending order, and produce no gaps or overlaps. Show a result heading in the form 6 balanced batches, followed by numbered rows containing each batch's inclusive start, inclusive end, and item count. For Start number 1, End number 100, and Number of batches 6, show Batch 1: 1–17 (17 items), Batch 2: 18–34 (17 items), Batch 3: 35–51 (17 items), Batch 4: 52–68 (17 items), Batch 5: 69–84 (16 items), and Batch 6: 85–100 (16 items). Reject empty fields with Enter all three values, non-integer or non-finite input with Enter whole numbers only, an end below the start with End number must be at least the start number, a range above the limit with Range can contain at most 1,000,000 values, a batch count outside its limit with Use 1 to 1,000 batches, and more batches than values with Batches cannot exceed values; keep the last valid result visible after an invalid submission. Provide Clear values as a secondary action. Do not execute jobs, read files, access the clipboard automatically, save range history, request sensitive permissions, or infer what the numbers represent. Require no account or backend, store no app inputs on a server, and allow networking only for the existing Google Mobile Ads AdMob SDK. Preserve the generated design system and buildAppTheme integration. Provide complete ARB translations without English substitutions for en, ko, ja, zh_Hans, zh_Hant, es, fr, de, pt_BR, it, nl, ru, ar, hi, id, and vi, including RTL-safe Arabic layout. Put an immediately usable compact AppBar language menu showing the current locale code and a chevron on the first screen, persist the selected locale with shared_preferences, restore it on later launches, and use English only as the first-run fallback. Put the session-only AppAppearanceMenu immediately to the left of the in-app privacy-policy action in a bottom-centered footer directly above exactly one non-intrusive standard AdSize.banner, exposing only minimal_material, flat, and soft. The banner must never cover or displace the purpose, inputs, primary action, validation, results, or footer. Deterministic widget tests must verify the exact 1 through 100 into 6 batches result; an evenly divisible range; a signed range; single-value and single-batch boundaries; complete coverage with no gaps, overlaps, or size difference greater than one; each specified validation error while retaining the last valid result; persisted locale restoration; and switching from English to Arabic translates labels, applies RTL layout without clipping, and preserves inputs and results.",
+  "planning": {
+    "source": "codex",
+    "priority": 0,
+    "launch_scope": "global",
+    "problem": "Adults processing, reviewing, assigning, or checking a numbered range need a quick way to split it into balanced contiguous batches without manually calculating every boundary.",
+    "audience": "Adult global users who need explicit, evenly sized inclusive ranges for manual work or for transferring into another tool.",
+    "differentiator": "Unlike the portfolio's sequence gap finder and pack mix planner, this utility does not inspect a supplied list or optimize package combinations; it deterministically generates complete non-overlapping boundaries from one inclusive range and a requested batch count.",
+    "monetization": "One standard-size AdMob banner remains below the bottom-centered appearance and privacy footer and never covers the range inputs, primary action, validation, or generated batch boundaries.",
+    "privacy": "No account, backend, server-side input storage, saved history, file access, or automatic clipboard access; entered ranges and generated boundaries remain on device for the current session, with AdMob advertising disclosed separately.",
+    "test_scenarios": "Widget tests cover the exact 1 through 100 into 6 batches result, evenly divisible and signed ranges, single-value and single-batch boundaries, complete gap-free and overlap-free coverage, all stated invalid inputs with last-result retention, persisted locale restoration, English-to-Arabic switching, and RTL layout without clipping."
+  },
+  "deployment": {
+    "play": {
+      "default_language": "en-US",
+      "app_type": "app",
+      "pricing": "free"
+    },
+    "content": {
+      "contains_ads": true,
+      "target_audience": "teens_and_adults",
+      "user_generated_content": false
+    },
+    "data_safety": {
+      "account_required": false,
+      "app_inputs_server_stored": false,
+      "third_party_sdks": [
+        "admob"
+      ]
+    },
+    "release": {
+      "launch_scope": "global",
+      "internal_test": true,
+      "production_approval_required": true,
+      "initial_production_rollout": 1.0
+    },
+    "admob_secret": "range_batch_planner_admob",
+    "category": "Tools"
+  },
+  "store_screenshots": [
+    {
+      "id": "phone-01",
+      "description": "Clean initial range-planning state with all three core inputs and the primary action visible.",
+      "actions": [],
+      "expected_texts": [
+        "Range Batch Planner",
+        "Start number",
+        "End number",
+        "Number of batches",
+        "Plan batches"
+      ],
+      "forbidden_texts": [
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    },
+    {
+      "id": "phone-02",
+      "description": "Split the inclusive range from 1 through 100 into six balanced contiguous batches.",
+      "actions": [
+        {
+          "type": "input",
+          "target": "Start number",
+          "text": "1"
+        },
+        {
+          "type": "input",
+          "target": "End number",
+          "text": "100"
+        },
+        {
+          "type": "input",
+          "target": "Number of batches",
+          "text": "6"
+        },
+        {
+          "type": "tap",
+          "target": "Plan batches"
+        },
+        {
+          "type": "wait",
+          "seconds": 2
+        }
+      ],
+      "expected_texts": [
+        "6 balanced batches",
+        "Batch 1: 1–17 (17 items)",
+        "Batch 6: 85–100 (16 items)"
+      ],
+      "forbidden_texts": [
+        "Enter all three values",
+        "Enter whole numbers only",
+        "End number must be at least the start number",
+        "Range can contain at most 1,000,000 values",
+        "Use 1 to 1,000 batches",
+        "Batches cannot exceed values",
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    }
+  ]
+}

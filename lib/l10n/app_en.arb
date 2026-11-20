@@ -1,0 +1,13 @@
+{
+  "appTitle": "Range Batch Planner",
+  "@appTitle": {
+    "description": "The app title shown in the system UI."
+  },
+  "appDescription": "Divide an inclusive integer range into balanced contiguous batches entirely offline.",
+  "@appDescription": {
+    "description": "The short description shown on the home page."
+  },
+  "languageEnglish": "English",
+  "languageKorean": "한국어",
+  "privacyPolicy": "Privacy policy"
+}
