@@ -1,0 +1,9 @@
+{
+  "language": "en-US",
+  "title": "Range Batch Planner",
+  "short_description": "Divide an inclusive integer range into balanced contiguous batches entirely",
+  "full_description": "Range Batch Planner\n\nDivide an inclusive integer range into balanced contiguous batches entirely offline.\n\nFeatures:\n• Simple, clear results\n• Works offline\n• Choose your preferred language in the app settings",
+  "contact_email": "contact@alinxs.com",
+  "contact_website": "https://alinxs.com",
+  "contact_phone": ""
+}
