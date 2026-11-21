@@ -17,10 +17,75 @@ class AppLocalizationsEn extends AppLocalizations {
       'Divide an inclusive integer range into balanced contiguous batches entirely offline.';
 
   @override
-  String get languageEnglish => 'English';
+  String get languageMenuTooltip => 'Choose language';
 
   @override
-  String get languageKorean => '한국어';
+  String get startNumber => 'Start number';
+
+  @override
+  String get endNumber => 'End number';
+
+  @override
+  String get batchCount => 'Number of batches';
+
+  @override
+  String get planBatches => 'Plan batches';
+
+  @override
+  String get clearValues => 'Clear values';
+
+  @override
+  String get errorRequired => 'Enter all three values';
+
+  @override
+  String get errorWholeNumbers => 'Enter whole numbers only';
+
+  @override
+  String get errorEndBeforeStart =>
+      'End number must be at least the start number';
+
+  @override
+  String get errorRangeTooLarge => 'Range can contain at most 1,000,000 values';
+
+  @override
+  String get errorBatchLimit => 'Use 1 to 1,000 batches';
+
+  @override
+  String get errorTooManyBatches => 'Batches cannot exceed values';
+
+  @override
+  String resultHeading(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count balanced batches',
+      one: '1 balanced batch',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String batchRow(int number, String start, String end, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items',
+      one: '1 item',
+    );
+    return 'Batch $number: $start–$end ($_temp0)';
+  }
+
+  @override
+  String get appearanceMenuTooltip => 'Choose appearance';
+
+  @override
+  String get appearanceMaterial => 'Material';
+
+  @override
+  String get appearanceFlat => 'Flat';
+
+  @override
+  String get appearanceSoft => 'Soft';
 
   @override
   String get privacyPolicy => 'Privacy policy';

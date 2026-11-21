@@ -15,6 +15,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale _locale = const Locale('en');
   String _designStyle = appDesignStyle;
+  bool _hasUserSelectedLocale = false;
 
   @override
   void initState() {
@@ -24,7 +25,10 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> _restoreLocale() async {
     final savedLocale = await AppLocalePreferences.load();
-    if (!mounted || savedLocale == null || !_isSupportedLocale(savedLocale)) {
+    if (!mounted ||
+        _hasUserSelectedLocale ||
+        savedLocale == null ||
+        !_isSupportedLocale(savedLocale)) {
       return;
     }
     setState(() => _locale = savedLocale);
@@ -37,7 +41,9 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _changeLocale(Locale locale) {
+    _hasUserSelectedLocale = true;
     if (locale == _locale) {
+      AppLocalePreferences.save(locale);
       return;
     }
     setState(() => _locale = locale);
@@ -51,6 +57,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       locale: _locale,
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       localizationsDelegates: AppLocalizations.localizationsDelegates,

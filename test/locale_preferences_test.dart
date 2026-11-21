@@ -18,4 +18,11 @@ void main() {
     expect(AppLocalePreferences.parseLocaleTag(null), isNull);
     expect(AppLocalePreferences.parseLocaleTag(''), isNull);
   });
+
+  test('normalizes a locale with both script and region subtags', () {
+    expect(
+      AppLocalePreferences.parseLocaleTag('zh-Hans-CN')?.toLanguageTag(),
+      'zh-Hans-CN',
+    );
+  });
 }

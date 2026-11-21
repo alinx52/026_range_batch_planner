@@ -5,8 +5,21 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_ar.dart';
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_hi.dart';
+import 'app_localizations_id.dart';
+import 'app_localizations_it.dart';
+import 'app_localizations_ja.dart';
 import 'app_localizations_ko.dart';
+import 'app_localizations_nl.dart';
+import 'app_localizations_pt.dart';
+import 'app_localizations_ru.dart';
+import 'app_localizations_vi.dart';
+import 'app_localizations_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -95,32 +108,144 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
+    Locale('ar'),
+    Locale('de'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('hi'),
+    Locale('id'),
+    Locale('it'),
+    Locale('ja'),
     Locale('ko'),
+    Locale('nl'),
+    Locale('pt'),
+    Locale('pt', 'BR'),
+    Locale('ru'),
+    Locale('vi'),
+    Locale('zh'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
   ];
 
-  /// The app title shown in the system UI.
+  /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
   /// **'Range Batch Planner'**
   String get appTitle;
 
-  /// The short description shown on the home page.
+  /// No description provided for @appDescription.
   ///
   /// In en, this message translates to:
   /// **'Divide an inclusive integer range into balanced contiguous batches entirely offline.'**
   String get appDescription;
 
-  /// No description provided for @languageEnglish.
+  /// No description provided for @languageMenuTooltip.
   ///
   /// In en, this message translates to:
-  /// **'English'**
-  String get languageEnglish;
+  /// **'Choose language'**
+  String get languageMenuTooltip;
 
-  /// No description provided for @languageKorean.
+  /// No description provided for @startNumber.
   ///
   /// In en, this message translates to:
-  /// **'한국어'**
-  String get languageKorean;
+  /// **'Start number'**
+  String get startNumber;
+
+  /// No description provided for @endNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'End number'**
+  String get endNumber;
+
+  /// No description provided for @batchCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of batches'**
+  String get batchCount;
+
+  /// No description provided for @planBatches.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan batches'**
+  String get planBatches;
+
+  /// No description provided for @clearValues.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear values'**
+  String get clearValues;
+
+  /// No description provided for @errorRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter all three values'**
+  String get errorRequired;
+
+  /// No description provided for @errorWholeNumbers.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter whole numbers only'**
+  String get errorWholeNumbers;
+
+  /// No description provided for @errorEndBeforeStart.
+  ///
+  /// In en, this message translates to:
+  /// **'End number must be at least the start number'**
+  String get errorEndBeforeStart;
+
+  /// No description provided for @errorRangeTooLarge.
+  ///
+  /// In en, this message translates to:
+  /// **'Range can contain at most 1,000,000 values'**
+  String get errorRangeTooLarge;
+
+  /// No description provided for @errorBatchLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'Use 1 to 1,000 batches'**
+  String get errorBatchLimit;
+
+  /// No description provided for @errorTooManyBatches.
+  ///
+  /// In en, this message translates to:
+  /// **'Batches cannot exceed values'**
+  String get errorTooManyBatches;
+
+  /// No description provided for @resultHeading.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 balanced batch} other{{count} balanced batches}}'**
+  String resultHeading(int count);
+
+  /// No description provided for @batchRow.
+  ///
+  /// In en, this message translates to:
+  /// **'Batch {number}: {start}–{end} ({count, plural, =1{1 item} other{{count} items}})'**
+  String batchRow(int number, String start, String end, int count);
+
+  /// No description provided for @appearanceMenuTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose appearance'**
+  String get appearanceMenuTooltip;
+
+  /// No description provided for @appearanceMaterial.
+  ///
+  /// In en, this message translates to:
+  /// **'Material'**
+  String get appearanceMaterial;
+
+  /// No description provided for @appearanceFlat.
+  ///
+  /// In en, this message translates to:
+  /// **'Flat'**
+  String get appearanceFlat;
+
+  /// No description provided for @appearanceSoft.
+  ///
+  /// In en, this message translates to:
+  /// **'Soft'**
+  String get appearanceSoft;
 
   /// No description provided for @privacyPolicy.
   ///
@@ -139,20 +264,87 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'ko'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+    'ar',
+    'de',
+    'en',
+    'es',
+    'fr',
+    'hi',
+    'id',
+    'it',
+    'ja',
+    'ko',
+    'nl',
+    'pt',
+    'ru',
+    'vi',
+    'zh',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+script codes are specified.
+  switch (locale.languageCode) {
+    case 'zh':
+      {
+        switch (locale.scriptCode) {
+          case 'Hans':
+            return AppLocalizationsZhHans();
+          case 'Hant':
+            return AppLocalizationsZhHant();
+        }
+        break;
+      }
+  }
+
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return AppLocalizationsPtBr();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'ar':
+      return AppLocalizationsAr();
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'hi':
+      return AppLocalizationsHi();
+    case 'id':
+      return AppLocalizationsId();
+    case 'it':
+      return AppLocalizationsIt();
+    case 'ja':
+      return AppLocalizationsJa();
     case 'ko':
       return AppLocalizationsKo();
+    case 'nl':
+      return AppLocalizationsNl();
+    case 'pt':
+      return AppLocalizationsPt();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'vi':
+      return AppLocalizationsVi();
+    case 'zh':
+      return AppLocalizationsZh();
   }
 
   throw FlutterError(

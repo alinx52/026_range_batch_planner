@@ -1,13 +1,26 @@
 {
+  "@@locale": "en",
   "appTitle": "Range Batch Planner",
-  "@appTitle": {
-    "description": "The app title shown in the system UI."
-  },
   "appDescription": "Divide an inclusive integer range into balanced contiguous batches entirely offline.",
-  "@appDescription": {
-    "description": "The short description shown on the home page."
-  },
-  "languageEnglish": "English",
-  "languageKorean": "한국어",
+  "languageMenuTooltip": "Choose language",
+  "startNumber": "Start number",
+  "endNumber": "End number",
+  "batchCount": "Number of batches",
+  "planBatches": "Plan batches",
+  "clearValues": "Clear values",
+  "errorRequired": "Enter all three values",
+  "errorWholeNumbers": "Enter whole numbers only",
+  "errorEndBeforeStart": "End number must be at least the start number",
+  "errorRangeTooLarge": "Range can contain at most 1,000,000 values",
+  "errorBatchLimit": "Use 1 to 1,000 batches",
+  "errorTooManyBatches": "Batches cannot exceed values",
+  "resultHeading": "{count, plural, =1{1 balanced batch} other{{count} balanced batches}}",
+  "@resultHeading": {"placeholders": {"count": {"type": "int"}}},
+  "batchRow": "Batch {number}: {start}–{end} ({count, plural, =1{1 item} other{{count} items}})",
+  "@batchRow": {"placeholders": {"number": {"type": "int"}, "start": {"type": "String"}, "end": {"type": "String"}, "count": {"type": "int"}}},
+  "appearanceMenuTooltip": "Choose appearance",
+  "appearanceMaterial": "Material",
+  "appearanceFlat": "Flat",
+  "appearanceSoft": "Soft",
   "privacyPolicy": "Privacy policy"
 }
