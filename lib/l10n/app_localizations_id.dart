@@ -79,4 +79,52 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Kebijakan privasi';
+
+  @override
+  String get helpTooltip => 'Bantuan & Panduan';
+
+  @override
+  String get helpTitle => 'Panduan Perencana Kelompok Rentang';
+
+  @override
+  String get helpProblemSolvedTitle => 'Masalah yang Diatasi';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Membagi rentang angka berurutan menjadi kelompok kerja yang seimbang, menghitung batas awal, akhir, dan jumlah item.';
+
+  @override
+  String get helpHowToUseTitle => 'Cara Penggunaan';
+
+  @override
+  String get helpHowToUseContent =>
+      'Masukkan Nomor Awal, Nomor Akhir, dan jumlah kelompok yang diinginkan, lalu ketuk Hasilkan kelompok.';
+
+  @override
+  String get helpReadingResultsTitle => 'Membaca Hasil';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Menampilkan total item dalam rentang, jumlah kelompok yang dibuat, serta daftar Awal, Akhir, dan Jumlah tiap kelompok.';
+
+  @override
+  String get helpExampleTitle => 'Contoh';
+
+  @override
+  String get helpExampleContent =>
+      'Rentang: 1 hingga 100 menjadi 3 kelompok\nKelompok 1: 1 - 34 (34 item)\nKelompok 2: 35 - 67 (33 item)\nKelompok 3: 68 - 100 (33 item).';
+
+  @override
+  String get helpLimitsTitle => 'Validasi & Batasan';
+
+  @override
+  String get helpLimitsContent =>
+      'Hanya alat pembagian matematika bilangan bulat. Tidak mengeksekusi proses batch asinkron atau memantau transaksi database.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Data Lokal & Iklan';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Semua perhitungan rentang berjalan secara lokal di perangkat tanpa internet. Spanduk AdMob ditampilkan di bawah.';
 }

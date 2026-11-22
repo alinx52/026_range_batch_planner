@@ -75,4 +75,52 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'プライバシーポリシー';
+
+  @override
+  String get helpTooltip => 'ヘルプと使い方';
+
+  @override
+  String get helpTitle => '範囲バッチ分割プランナーガイド';
+
+  @override
+  String get helpProblemSolvedTitle => '解決する課題';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '連続する数値範囲（ID、シリアル番号など）を指定した数の均等な作業バッチに分割し、各バッチの開始値、終了値、件数を計算します。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '開始番号、終了番号、分割したいバッチ数（またはバッチサイズ上限）を入力し、「バッチを生成」をタップします。';
+
+  @override
+  String get helpReadingResultsTitle => '結果の見方';
+
+  @override
+  String get helpReadingResultsContent =>
+      '範囲内の総件数、作成されたバッチ数、各バッチの開始・終了・件数のリストが順序正しく表示されます。';
+
+  @override
+  String get helpExampleTitle => '具体例';
+
+  @override
+  String get helpExampleContent =>
+      '範囲: 1〜100、3バッチに分割\nバッチ 1: 1〜34 (34件)\nバッチ 2: 35〜67 (33件)\nバッチ 3: 68〜100 (33件)。';
+
+  @override
+  String get helpLimitsTitle => '検証と制限事項';
+
+  @override
+  String get helpLimitsContent =>
+      '整数演算による分割ツールです。非同期ジョブの実行、DBワーカーの負荷監視、トランザクション完了を保証するものではありません。';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'ローカルデータと広告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'すべての計算は外部通信なしで端末内でのみ行われます。画面下部に標準AdMobバナーが表示されます。';
 }

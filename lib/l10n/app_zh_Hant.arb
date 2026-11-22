@@ -20,5 +20,19 @@
   "appearanceMaterial": "質感",
   "appearanceFlat": "扁平",
   "appearanceSoft": "柔和",
-  "privacyPolicy": "隱私權政策"
+  "privacyPolicy": "隱私權政策",
+  "helpTooltip": "說明與指南",
+  "helpTitle": "連續區間分批規劃指南",
+  "helpProblemSolvedTitle": "解決的問題",
+  "helpProblemSolvedContent": "離線將連續的整數編號區間（資料ID、序號）劃分為數量均衡的工作批次，計算各區塊的精確起訖值與項目數量。",
+  "helpHowToUseTitle": "使用方法",
+  "helpHowToUseContent": "輸入起始編號、結束編號以及預期的分批數量（或單批大小上限），接著點擊「產生批次」。",
+  "helpReadingResultsTitle": "查看結果",
+  "helpReadingResultsContent": "顯示區間總數量、產生的批次總數，以及列出各批次起訖值與項目數量的順序清單。",
+  "helpExampleTitle": "範例",
+  "helpExampleContent": "範圍: 1 至 100，劃分為3批\n批次 1: 1 - 34 (34項)\n批次 2: 35 - 67 (33項)\n批次 3: 68 - 100 (33項)。",
+  "helpLimitsTitle": "驗證與限制",
+  "helpLimitsContent": "僅為整數區間數學分割工具。不執行背景批次作業，不監控資料庫線程，不保證事務成功。",
+  "helpDataAndPrivacyTitle": "本機資料與廣告",
+  "helpDataAndPrivacyContent": "所有區間分割計算均在裝置本機完成，無網路傳輸。螢幕底部顯示標準Google AdMob橫幅廣告。"
 }

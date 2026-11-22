@@ -95,4 +95,52 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'سياسة الخصوصية';
+
+  @override
+  String get helpTooltip => 'المساعدة والدليل';
+
+  @override
+  String get helpTitle => 'دليل تخطيط دفعات النطاقات العددية';
+
+  @override
+  String get helpProblemSolvedTitle => 'المشكلة التي يعالجها';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'يقسم النطاقات الرقمية المتتالية إلى دفعات عمل متوازنة محليًا، مع حساب حدود البداية والنهاية وعدد العناصر لكل دفعة بدقة.';
+
+  @override
+  String get helpHowToUseTitle => 'طريقة الاستخدام';
+
+  @override
+  String get helpHowToUseContent =>
+      'أدخل رقم البداية، ورقم النهاية، وعدد الدفعات المطلوب (أو حد حجم الدفعة)، ثم اضغط إنشاء الدفعات.';
+
+  @override
+  String get helpReadingResultsTitle => 'قراءة النتائج';
+
+  @override
+  String get helpReadingResultsContent =>
+      'يعرض إجمالي العناصر في النطاق، وعدد الدفعات المنشأة، وقائمة متسلسلة توضح البداية والنهاية والعدد لكل دفعة.';
+
+  @override
+  String get helpExampleTitle => 'مثال توضيحي';
+
+  @override
+  String get helpExampleContent =>
+      'النطاق: من 1 إلى 100 مقسمة إلى 3 دفعات\nالدفعة 1: من 1 إلى 34 (34 عنصرًا)\nالدفعة 2: من 35 إلى 67 (33 عنصرًا)\nالدفعة 3: من 68 إلى 100 (33 عنصرًا).';
+
+  @override
+  String get helpLimitsTitle => 'التحقق والقيود';
+
+  @override
+  String get helpLimitsContent =>
+      'أداة تقسيم رياضي عددي فقط. لا تنفذ مهام المعالجة المجمعة الفعلية ولا تراقب قواعد البيانات.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'البيانات المحلية والإعلانات';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'تتم جميع الحسابات محليًا دون أي اتصال بالإنترنت. يظهر شريط إعلاني قياسي من AdMob أسفل الشاشة.';
 }

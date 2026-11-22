@@ -79,4 +79,52 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Политика конфиденциальности';
+
+  @override
+  String get helpTooltip => 'Справка и руководство';
+
+  @override
+  String get helpTitle => 'Руководство по планированию пакетов диапазонов';
+
+  @override
+  String get helpProblemSolvedTitle => 'Решаемая задача';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Разбивает непрерывные диапазоны чисел на сбалансированные пакеты, вычисляя точные границы начала, конца и количества.';
+
+  @override
+  String get helpHowToUseTitle => 'Как использовать';
+
+  @override
+  String get helpHowToUseContent =>
+      'Введите начальное число, конечное число и желаемое количество пакетов, затем нажмите «Сгенерировать пакеты».';
+
+  @override
+  String get helpReadingResultsTitle => 'Чтение результатов';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Отображает общее число элементов, количество пакетов и последовательный список с началом, концом и числом элементов.';
+
+  @override
+  String get helpExampleTitle => 'Пример';
+
+  @override
+  String get helpExampleContent =>
+      'Диапазон: от 1 до 100 на 3 пакета\nПакет 1: 1 - 34 (34 элемента)\nПакет 2: 35 - 67 (33 элемента)\nПакет 3: 68 - 100 (33 элемента).';
+
+  @override
+  String get helpLimitsTitle => 'Проверка и ограничения';
+
+  @override
+  String get helpLimitsContent =>
+      'Инструмент математического разбиения чисел. Не запускает асинхронные задачи и не контролирует транзакции баз данных.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Локальные данные и реклама';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Все вычисления диапазонов выполняются локально на устройстве без интернета. Внизу отображается баннер AdMob.';
 }

@@ -91,4 +91,52 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Datenschutzerklärung';
+
+  @override
+  String get helpTooltip => 'Hilfe & Anleitung';
+
+  @override
+  String get helpTitle => 'Bereichs-Chargenplaner-Leitfaden';
+
+  @override
+  String get helpProblemSolvedTitle => 'Gelöstes Problem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Teilt zusammenhängende Zahlenbereiche offline in gleichmäßige Arbeitschargen auf, inklusive Start-, End- und Mengenangaben.';
+
+  @override
+  String get helpHowToUseTitle => 'Bedienung';
+
+  @override
+  String get helpHowToUseContent =>
+      'Geben Sie Start- und Endnummer sowie die gewünschte Chargenanzahl ein und tippen Sie auf Chargen generieren.';
+
+  @override
+  String get helpReadingResultsTitle => 'Ergebnisse verstehen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Zeigt Gesamtanzahl der Elemente, erstellte Chargen und eine Liste mit Start, Ende und Anzahl pro Charge an.';
+
+  @override
+  String get helpExampleTitle => 'Beispiel';
+
+  @override
+  String get helpExampleContent =>
+      'Bereich: 1 bis 100 in 3 Chargen\nCharge 1: 1 - 34 (34 Elemente)\nCharge 2: 35 - 67 (33 Elemente)\nCharge 3: 68 - 100 (33 Elemente).';
+
+  @override
+  String get helpLimitsTitle => 'Validierung & Grenzen';
+
+  @override
+  String get helpLimitsContent =>
+      'Reines mathematisches Bereichspartitionierungstool. Führt keine asynchronen Jobs aus und überwacht keine Datenbank-Transaktionen.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale Daten & Werbung';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Alle Bereichsberechnungen laufen lokal auf dem Gerät ohne Internetzugriff. Unten wird ein AdMob-Banner angezeigt.';
 }

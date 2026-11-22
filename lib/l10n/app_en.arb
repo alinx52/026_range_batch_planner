@@ -15,12 +15,47 @@
   "errorBatchLimit": "Use 1 to 1,000 batches",
   "errorTooManyBatches": "Batches cannot exceed values",
   "resultHeading": "{count, plural, =1{1 balanced batch} other{{count} balanced batches}}",
-  "@resultHeading": {"placeholders": {"count": {"type": "int"}}},
+  "@resultHeading": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "batchRow": "Batch {number}: {start}–{end} ({count, plural, =1{1 item} other{{count} items}})",
-  "@batchRow": {"placeholders": {"number": {"type": "int"}, "start": {"type": "String"}, "end": {"type": "String"}, "count": {"type": "int"}}},
+  "@batchRow": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "appearanceMenuTooltip": "Choose appearance",
   "appearanceMaterial": "Material",
   "appearanceFlat": "Flat",
   "appearanceSoft": "Soft",
-  "privacyPolicy": "Privacy policy"
+  "privacyPolicy": "Privacy policy",
+  "helpTooltip": "Help & Guide",
+  "helpTitle": "Range Batch Planner Guide",
+  "helpProblemSolvedTitle": "Problem Solved",
+  "helpProblemSolvedContent": "Splits contiguous numeric ID ranges into balanced work batches offline, calculating precise start, end, and item count boundaries for each partition.",
+  "helpHowToUseTitle": "How to Use",
+  "helpHowToUseContent": "Input the Start Number, End Number, and desired number of batches (or batch size limit), then tap Generate batches.",
+  "helpReadingResultsTitle": "Reading Results",
+  "helpReadingResultsContent": "Displays total items in the range, number of batches created, and a sequential list showing Start, End, and Count for each batch.",
+  "helpExampleTitle": "Example",
+  "helpExampleContent": "Range: 1 to 100 into 3 batches\nBatch 1: 1 - 34 (34 items)\nBatch 2: 35 - 67 (33 items)\nBatch 3: 68 - 100 (33 items).",
+  "helpLimitsTitle": "Validation & Limitations",
+  "helpLimitsContent": "Integer math partitioning tool only. Does not execute asynchronous batch jobs, monitor database workers, or guarantee transaction success.",
+  "helpDataAndPrivacyTitle": "Local Data & Ads",
+  "helpDataAndPrivacyContent": "All range calculations run strictly on-device without internet communication. A standard AdMob banner is displayed below."
 }

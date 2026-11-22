@@ -78,4 +78,52 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Chính sách quyền riêng tư';
+
+  @override
+  String get helpTooltip => 'Trợ giúp & Hướng dẫn';
+
+  @override
+  String get helpTitle => 'Hướng dẫn lập kế hoạch chia lô phạm vi';
+
+  @override
+  String get helpProblemSolvedTitle => 'Vấn đề giải quyết';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Chia các phạm vi số liên tiếp thành các lô công việc cân bằng, tính toán ranh giới bắt đầu, kết thúc và số lượng chính xác.';
+
+  @override
+  String get helpHowToUseTitle => 'Cách sử dụng';
+
+  @override
+  String get helpHowToUseContent =>
+      'Nhập Số bắt đầu, Số kết thúc và số lượng lô mong muốn (hoặc giới hạn kích thước lô), sau đó nhấn Tạo lô.';
+
+  @override
+  String get helpReadingResultsTitle => 'Đọc kết quả';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Hiển thị tổng số mục trong phạm vi, số lượng lô được tạo và danh sách tuần tự hiển thị Bắt đầu, Kết thúc và Số lượng.';
+
+  @override
+  String get helpExampleTitle => 'Ví dụ';
+
+  @override
+  String get helpExampleContent =>
+      'Phạm vi: 1 đến 100 thành 3 lô\nLô 1: 1 - 34 (34 mục)\nLô 2: 35 - 67 (33 mục)\nLô 3: 68 - 100 (33 mục).';
+
+  @override
+  String get helpLimitsTitle => 'Xác thực & Giới hạn';
+
+  @override
+  String get helpLimitsContent =>
+      'Chỉ là công cụ phân chia toán học số nguyên. Không thực hiện các tác vụ hàng loạt hoặc giám sát cơ sở dữ liệu.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dữ liệu cục bộ & Quảng cáo';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tất cả các phép tính phạm vi chạy cục bộ trên thiết bị mà không cần internet. Biểu ngữ AdMob hiển thị ở dưới cùng.';
 }

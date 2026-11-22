@@ -91,6 +91,54 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Política de privacidade';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Planejador de Lotes por Intervalos';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Divide intervalos numéricos contínuos em lotes equilibrados, calculando início, fim e quantidade de cada partição.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Digite o número inicial, o número final e a quantidade de lotes desejada e toque em Gerar lotes.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Exibe o total de itens, a quantidade de lotes e a lista com Início, Fim e Quantidade de cada lote.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Intervalo: 1 a 100 em 3 lotes\nLote 1: 1 - 34 (34 itens)\nLote 2: 35 - 67 (33 itens)\nLote 3: 68 - 100 (33 itens).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Ferramenta de partição matemática inteira. Não executa tarefas em lote nem garante sucesso de transações em bancos de dados.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todos os cálculos ocorrem localmente no aparelho sem internet. Um banner do AdMob é exibido abaixo.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -179,4 +227,52 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get privacyPolicy => 'Política de privacidade';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Planejador de Lotes por Intervalos';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Divide intervalos numéricos contínuos em lotes equilibrados, calculando início, fim e quantidade de cada partição.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Digite o número inicial, o número final e a quantidade de lotes desejada e toque em Gerar lotes.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Exibe o total de itens, a quantidade de lotes e a lista com Início, Fim e Quantidade de cada lote.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Intervalo: 1 a 100 em 3 lotes\nLote 1: 1 - 34 (34 itens)\nLote 2: 35 - 67 (33 itens)\nLote 3: 68 - 100 (33 itens).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Ferramenta de partição matemática inteira. Não executa tarefas em lote nem garante sucesso de transações em bancos de dados.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todos os cálculos ocorrem localmente no aparelho sem internet. Um banner do AdMob é exibido abaixo.';
 }

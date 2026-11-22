@@ -20,5 +20,19 @@
   "appearanceMaterial": "Chất liệu",
   "appearanceFlat": "Phẳng",
   "appearanceSoft": "Mềm mại",
-  "privacyPolicy": "Chính sách quyền riêng tư"
+  "privacyPolicy": "Chính sách quyền riêng tư",
+  "helpTooltip": "Trợ giúp & Hướng dẫn",
+  "helpTitle": "Hướng dẫn lập kế hoạch chia lô phạm vi",
+  "helpProblemSolvedTitle": "Vấn đề giải quyết",
+  "helpProblemSolvedContent": "Chia các phạm vi số liên tiếp thành các lô công việc cân bằng, tính toán ranh giới bắt đầu, kết thúc và số lượng chính xác.",
+  "helpHowToUseTitle": "Cách sử dụng",
+  "helpHowToUseContent": "Nhập Số bắt đầu, Số kết thúc và số lượng lô mong muốn (hoặc giới hạn kích thước lô), sau đó nhấn Tạo lô.",
+  "helpReadingResultsTitle": "Đọc kết quả",
+  "helpReadingResultsContent": "Hiển thị tổng số mục trong phạm vi, số lượng lô được tạo và danh sách tuần tự hiển thị Bắt đầu, Kết thúc và Số lượng.",
+  "helpExampleTitle": "Ví dụ",
+  "helpExampleContent": "Phạm vi: 1 đến 100 thành 3 lô\nLô 1: 1 - 34 (34 mục)\nLô 2: 35 - 67 (33 mục)\nLô 3: 68 - 100 (33 mục).",
+  "helpLimitsTitle": "Xác thực & Giới hạn",
+  "helpLimitsContent": "Chỉ là công cụ phân chia toán học số nguyên. Không thực hiện các tác vụ hàng loạt hoặc giám sát cơ sở dữ liệu.",
+  "helpDataAndPrivacyTitle": "Dữ liệu cục bộ & Quảng cáo",
+  "helpDataAndPrivacyContent": "Tất cả các phép tính phạm vi chạy cục bộ trên thiết bị mà không cần internet. Biểu ngữ AdMob hiển thị ở dưới cùng."
 }

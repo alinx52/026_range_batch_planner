@@ -91,4 +91,52 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Informativa sulla privacy';
+
+  @override
+  String get helpTooltip => 'Guida e aiuto';
+
+  @override
+  String get helpTitle => 'Guida alla pianificazione lotti per intervalli';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema risolto';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Divide intervalli numerici continui in lotti di lavoro bilanciati, calcolando inizio, fine e conteggio di ogni partizione.';
+
+  @override
+  String get helpHowToUseTitle => 'Come usare';
+
+  @override
+  String get helpHowToUseContent =>
+      'Inserisci numero iniziale, finale e il numero di lotti desiderato (o dimensione per lotto), quindi tocca Genera lotti.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lettura dei risultati';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra il totale degli elementi, il numero di lotti creati e l\'elenco con Inizio, Fine e Conteggio per ciascun lotto.';
+
+  @override
+  String get helpExampleTitle => 'Esempio';
+
+  @override
+  String get helpExampleContent =>
+      'Intervallo: da 1 a 100 in 3 lotti\nLotto 1: 1 - 34 (34 elementi)\nLotto 2: 35 - 67 (33 elementi)\nLotto 3: 68 - 100 (33 elementi).';
+
+  @override
+  String get helpLimitsTitle => 'Validazione e limitazioni';
+
+  @override
+  String get helpLimitsContent =>
+      'Strumento di ripartizione matematica. Non esegue processi batch asincroni né monitora transazioni di database.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dati locali e annunci';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tutti i calcoli avvengono localmente sul dispositivo senza connessione internet. È visibile un banner AdMob standard.';
 }

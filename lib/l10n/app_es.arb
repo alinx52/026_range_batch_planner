@@ -20,5 +20,19 @@
   "appearanceMaterial": "Diseño material",
   "appearanceFlat": "Plano",
   "appearanceSoft": "Suave",
-  "privacyPolicy": "Política de privacidad"
+  "privacyPolicy": "Política de privacidad",
+  "helpTooltip": "Ayuda y guía",
+  "helpTitle": "Guía del planificador de lotes por rangos",
+  "helpProblemSolvedTitle": "Problema que resuelve",
+  "helpProblemSolvedContent": "Divide rangos numéricos continuos en lotes de trabajo equilibrados, calculando inicio, fin y recuento de cada partición.",
+  "helpHowToUseTitle": "Cómo usar",
+  "helpHowToUseContent": "Introduce el número de inicio, fin y la cantidad de lotes deseada (o tamaño por lote), y pulsa Generar lotes.",
+  "helpReadingResultsTitle": "Interpretación de resultados",
+  "helpReadingResultsContent": "Muestra el total de elementos, número de lotes creados y una lista secuencial con Inicio, Fin y Recuento por lote.",
+  "helpExampleTitle": "Ejemplo",
+  "helpExampleContent": "Rango: 1 al 100 en 3 lotes\nLote 1: 1 - 34 (34 elementos)\nLote 2: 35 - 67 (33 elementos)\nLote 3: 68 - 100 (33 elementos).",
+  "helpLimitsTitle": "Validaciones y límites",
+  "helpLimitsContent": "Calculadora de partición matemática. No ejecuta tareas por lotes en servidores ni monitoriza transacciones de bases de datos.",
+  "helpDataAndPrivacyTitle": "Datos locales y anuncios",
+  "helpDataAndPrivacyContent": "Todos los cálculos de rangos se realizan en el dispositivo sin conexión. Se muestra un banner estándar de AdMob."
 }

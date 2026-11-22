@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'help_page.dart';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -408,8 +409,18 @@ class _Footer extends StatelessWidget {
       icon: const Icon(Icons.privacy_tip_outlined, size: 18),
       label: Text(strings.privacyPolicy, overflow: TextOverflow.ellipsis),
     );
+    final helpAction = IconButton(
+      icon: const Icon(Icons.help_outline),
+      tooltip: strings.helpTooltip,
+      onPressed: () {
+        Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (context) => const HelpPage(),
+          ),
+        );
+      },
+    );
     final flexiblePrivacyAction = Flexible(child: privacyAction);
-    final isRtl = Directionality.of(context) == TextDirection.rtl;
     return DecoratedBox(
       decoration: BoxDecoration(
         border: Border(top: BorderSide(color: Theme.of(context).dividerColor)),
@@ -418,17 +429,13 @@ class _Footer extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: isRtl
-              ? [
-                  flexiblePrivacyAction,
-                  const SizedBox(width: 4),
-                  appearanceAction,
-                ]
-              : [
-                  appearanceAction,
-                  const SizedBox(width: 4),
-                  flexiblePrivacyAction,
-                ],
+          children: [
+            appearanceAction,
+            const SizedBox(width: 4),
+            helpAction,
+            const SizedBox(width: 4),
+            flexiblePrivacyAction,
+          ],
         ),
       ),
     );

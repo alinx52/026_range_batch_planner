@@ -20,5 +20,19 @@
   "appearanceMaterial": "Design material",
   "appearanceFlat": "Plano",
   "appearanceSoft": "Suave",
-  "privacyPolicy": "Política de privacidade"
+  "privacyPolicy": "Política de privacidade",
+  "helpTooltip": "Ajuda e guia",
+  "helpTitle": "Guia do Planejador de Lotes por Intervalos",
+  "helpProblemSolvedTitle": "Problema resolvido",
+  "helpProblemSolvedContent": "Divide intervalos numéricos contínuos em lotes equilibrados, calculando início, fim e quantidade de cada partição.",
+  "helpHowToUseTitle": "Como usar",
+  "helpHowToUseContent": "Digite o número inicial, o número final e a quantidade de lotes desejada e toque em Gerar lotes.",
+  "helpReadingResultsTitle": "Leitura dos resultados",
+  "helpReadingResultsContent": "Exibe o total de itens, a quantidade de lotes e a lista com Início, Fim e Quantidade de cada lote.",
+  "helpExampleTitle": "Exemplo",
+  "helpExampleContent": "Intervalo: 1 a 100 em 3 lotes\nLote 1: 1 - 34 (34 itens)\nLote 2: 35 - 67 (33 itens)\nLote 3: 68 - 100 (33 itens).",
+  "helpLimitsTitle": "Validação e limites",
+  "helpLimitsContent": "Ferramenta de partição matemática inteira. Não executa tarefas em lote nem garante sucesso de transações em bancos de dados.",
+  "helpDataAndPrivacyTitle": "Dados locais e anúncios",
+  "helpDataAndPrivacyContent": "Todos os cálculos ocorrem localmente no aparelho sem internet. Um banner do AdMob é exibido abaixo."
 }

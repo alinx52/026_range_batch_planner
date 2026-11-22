@@ -91,4 +91,52 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Política de privacidad';
+
+  @override
+  String get helpTooltip => 'Ayuda y guía';
+
+  @override
+  String get helpTitle => 'Guía del planificador de lotes por rangos';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema que resuelve';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Divide rangos numéricos continuos en lotes de trabajo equilibrados, calculando inicio, fin y recuento de cada partición.';
+
+  @override
+  String get helpHowToUseTitle => 'Cómo usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Introduce el número de inicio, fin y la cantidad de lotes deseada (o tamaño por lote), y pulsa Generar lotes.';
+
+  @override
+  String get helpReadingResultsTitle => 'Interpretación de resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Muestra el total de elementos, número de lotes creados y una lista secuencial con Inicio, Fin y Recuento por lote.';
+
+  @override
+  String get helpExampleTitle => 'Ejemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Rango: 1 al 100 en 3 lotes\nLote 1: 1 - 34 (34 elementos)\nLote 2: 35 - 67 (33 elementos)\nLote 3: 68 - 100 (33 elementos).';
+
+  @override
+  String get helpLimitsTitle => 'Validaciones y límites';
+
+  @override
+  String get helpLimitsContent =>
+      'Calculadora de partición matemática. No ejecuta tareas por lotes en servidores ni monitoriza transacciones de bases de datos.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Datos locales y anuncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todos los cálculos de rangos se realizan en el dispositivo sin conexión. Se muestra un banner estándar de AdMob.';
 }

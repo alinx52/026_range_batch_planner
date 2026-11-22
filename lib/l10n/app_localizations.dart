@@ -252,6 +252,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Privacy policy'**
   String get privacyPolicy;
+
+  /// No description provided for @helpTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Guide'**
+  String get helpTooltip;
+
+  /// No description provided for @helpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Range Batch Planner Guide'**
+  String get helpTitle;
+
+  /// No description provided for @helpProblemSolvedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Problem Solved'**
+  String get helpProblemSolvedTitle;
+
+  /// No description provided for @helpProblemSolvedContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Splits contiguous numeric ID ranges into balanced work batches offline, calculating precise start, end, and item count boundaries for each partition.'**
+  String get helpProblemSolvedContent;
+
+  /// No description provided for @helpHowToUseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How to Use'**
+  String get helpHowToUseTitle;
+
+  /// No description provided for @helpHowToUseContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Input the Start Number, End Number, and desired number of batches (or batch size limit), then tap Generate batches.'**
+  String get helpHowToUseContent;
+
+  /// No description provided for @helpReadingResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading Results'**
+  String get helpReadingResultsTitle;
+
+  /// No description provided for @helpReadingResultsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Displays total items in the range, number of batches created, and a sequential list showing Start, End, and Count for each batch.'**
+  String get helpReadingResultsContent;
+
+  /// No description provided for @helpExampleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Example'**
+  String get helpExampleTitle;
+
+  /// No description provided for @helpExampleContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Range: 1 to 100 into 3 batches\nBatch 1: 1 - 34 (34 items)\nBatch 2: 35 - 67 (33 items)\nBatch 3: 68 - 100 (33 items).'**
+  String get helpExampleContent;
+
+  /// No description provided for @helpLimitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation & Limitations'**
+  String get helpLimitsTitle;
+
+  /// No description provided for @helpLimitsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Integer math partitioning tool only. Does not execute asynchronous batch jobs, monitor database workers, or guarantee transaction success.'**
+  String get helpLimitsContent;
+
+  /// No description provided for @helpDataAndPrivacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Data & Ads'**
+  String get helpDataAndPrivacyTitle;
+
+  /// No description provided for @helpDataAndPrivacyContent.
+  ///
+  /// In en, this message translates to:
+  /// **'All range calculations run strictly on-device without internet communication. A standard AdMob banner is displayed below.'**
+  String get helpDataAndPrivacyContent;
 }
 
 class _AppLocalizationsDelegate

@@ -20,5 +20,19 @@
   "appearanceMaterial": "Materiaal",
   "appearanceFlat": "Vlak",
   "appearanceSoft": "Zacht",
-  "privacyPolicy": "Privacybeleid"
+  "privacyPolicy": "Privacybeleid",
+  "helpTooltip": "Hulp en gids",
+  "helpTitle": "Gids voor bereikbatchplanning",
+  "helpProblemSolvedTitle": "Opgelost probleem",
+  "helpProblemSolvedContent": "Verdeelt aaneengesloten numerieke bereiken offline in evenwichtige batches met exacte begin-, eind- en totaalaantallen.",
+  "helpHowToUseTitle": "Gebruiksaanwijzing",
+  "helpHowToUseContent": "Voer beginnummer, eindnummer en het gewenste aantal batches in en tik op Batches genereren.",
+  "helpReadingResultsTitle": "Resultaten aflezen",
+  "helpReadingResultsContent": "Toont het totale aantal items, aangemaakte batches en een lijst met Begin, Einde en Aantal per batch.",
+  "helpExampleTitle": "Voorbeeld",
+  "helpExampleContent": "Bereik: 1 tot 100 in 3 batches\nBatch 1: 1 - 34 (34 items)\nBatch 2: 35 - 67 (33 items)\nBatch 3: 68 - 100 (33 items).",
+  "helpLimitsTitle": "Validatie & Beperkingen",
+  "helpLimitsContent": "Wiskundig partitioneringshulpmiddel. Voert geen asynchrone batches uit en controleert geen databasetransacties.",
+  "helpDataAndPrivacyTitle": "Lokale gegevens & Advertenties",
+  "helpDataAndPrivacyContent": "Alle berekeningen worden op het apparaat uitgevoerd zonder internetverkeer. Onderaan staat een AdMob-banner."
 }

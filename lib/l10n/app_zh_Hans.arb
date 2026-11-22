@@ -20,5 +20,19 @@
   "appearanceMaterial": "质感",
   "appearanceFlat": "扁平",
   "appearanceSoft": "柔和",
-  "privacyPolicy": "隐私政策"
+  "privacyPolicy": "隐私政策",
+  "helpTooltip": "帮助与指南",
+  "helpTitle": "连续区间分批规划指南",
+  "helpProblemSolvedTitle": "解决的问题",
+  "helpProblemSolvedContent": "离线将连续的整数编号区间（数据ID、流水号）划分为数量均衡的工作批次，计算每个分块的精确起止值与项目数量。",
+  "helpHowToUseTitle": "使用方法",
+  "helpHowToUseContent": "输入起始编号、结束编号以及期望的分批数量（或单批次容量上限），然后点击“生成批次”。",
+  "helpReadingResultsTitle": "查看结果",
+  "helpReadingResultsContent": "显示区间总项数、生成的批次总数，以及包含每批次起始值、结束值与项数的顺序清单。",
+  "helpExampleTitle": "示例",
+  "helpExampleContent": "范围: 1 至 100，划分为3批\n批次 1: 1 - 34 (34项)\n批次 2: 35 - 67 (33项)\n批次 3: 68 - 100 (33项)。",
+  "helpLimitsTitle": "验证与限制",
+  "helpLimitsContent": "仅为纯整数区间数学划分工具。不执行后台异步批处理任务，不监控数据库线程，不保证事务成功。",
+  "helpDataAndPrivacyTitle": "本地数据与广告",
+  "helpDataAndPrivacyContent": "所有区间划分计算均在本地完成，无网络传输。屏幕底部展示标准Google AdMob横幅广告。"
 }

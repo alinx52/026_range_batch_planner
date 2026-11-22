@@ -91,4 +91,52 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get privacyPolicy => 'Politique de confidentialité';
+
+  @override
+  String get helpTooltip => 'Aide et guide';
+
+  @override
+  String get helpTitle => 'Guide du planificateur de lots par plages';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problème résolu';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Divise des plages numériques continues en lots équilibrés, en calculant le début, la fin et le nombre d\'éléments de chaque lot.';
+
+  @override
+  String get helpHowToUseTitle => 'Mode d\'emploi';
+
+  @override
+  String get helpHowToUseContent =>
+      'Saisissez le début, la fin et le nombre de lots souhaité (ou taille maximale), puis appuyez sur Générer les lots.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lecture des résultats';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Affiche le total d\'éléments, le nombre de lots créés et la liste séquentielle avec Début, Fin et Quantité par lot.';
+
+  @override
+  String get helpExampleTitle => 'Exemple';
+
+  @override
+  String get helpExampleContent =>
+      'Plage : 1 à 100 en 3 lots\nLot 1 : 1 - 34 (34 éléments)\nLot 2 : 35 - 67 (33 éléments)\nLot 3 : 68 - 100 (33 éléments).';
+
+  @override
+  String get helpLimitsTitle => 'Validations et limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Outil de partitionnement mathématique en nombres entiers. N\'exécute aucun travail en tâche de fond ni transaction de base de données.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Données locales et publicités';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tous les calculs sont effectués localement sans internet. Une bannière standard AdMob est affichée en bas.';
 }

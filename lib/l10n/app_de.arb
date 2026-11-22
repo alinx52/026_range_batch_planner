@@ -20,5 +20,19 @@
   "appearanceMaterial": "Materialdesign",
   "appearanceFlat": "Flach",
   "appearanceSoft": "Sanft",
-  "privacyPolicy": "Datenschutzerklärung"
+  "privacyPolicy": "Datenschutzerklärung",
+  "helpTooltip": "Hilfe & Anleitung",
+  "helpTitle": "Bereichs-Chargenplaner-Leitfaden",
+  "helpProblemSolvedTitle": "Gelöstes Problem",
+  "helpProblemSolvedContent": "Teilt zusammenhängende Zahlenbereiche offline in gleichmäßige Arbeitschargen auf, inklusive Start-, End- und Mengenangaben.",
+  "helpHowToUseTitle": "Bedienung",
+  "helpHowToUseContent": "Geben Sie Start- und Endnummer sowie die gewünschte Chargenanzahl ein und tippen Sie auf Chargen generieren.",
+  "helpReadingResultsTitle": "Ergebnisse verstehen",
+  "helpReadingResultsContent": "Zeigt Gesamtanzahl der Elemente, erstellte Chargen und eine Liste mit Start, Ende und Anzahl pro Charge an.",
+  "helpExampleTitle": "Beispiel",
+  "helpExampleContent": "Bereich: 1 bis 100 in 3 Chargen\nCharge 1: 1 - 34 (34 Elemente)\nCharge 2: 35 - 67 (33 Elemente)\nCharge 3: 68 - 100 (33 Elemente).",
+  "helpLimitsTitle": "Validierung & Grenzen",
+  "helpLimitsContent": "Reines mathematisches Bereichspartitionierungstool. Führt keine asynchronen Jobs aus und überwacht keine Datenbank-Transaktionen.",
+  "helpDataAndPrivacyTitle": "Lokale Daten & Werbung",
+  "helpDataAndPrivacyContent": "Alle Bereichsberechnungen laufen lokal auf dem Gerät ohne Internetzugriff. Unten wird ein AdMob-Banner angezeigt."
 }

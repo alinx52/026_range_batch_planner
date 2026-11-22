@@ -20,5 +20,19 @@
   "appearanceMaterial": "Matériau",
   "appearanceFlat": "Plat",
   "appearanceSoft": "Doux",
-  "privacyPolicy": "Politique de confidentialité"
+  "privacyPolicy": "Politique de confidentialité",
+  "helpTooltip": "Aide et guide",
+  "helpTitle": "Guide du planificateur de lots par plages",
+  "helpProblemSolvedTitle": "Problème résolu",
+  "helpProblemSolvedContent": "Divise des plages numériques continues en lots équilibrés, en calculant le début, la fin et le nombre d'éléments de chaque lot.",
+  "helpHowToUseTitle": "Mode d'emploi",
+  "helpHowToUseContent": "Saisissez le début, la fin et le nombre de lots souhaité (ou taille maximale), puis appuyez sur Générer les lots.",
+  "helpReadingResultsTitle": "Lecture des résultats",
+  "helpReadingResultsContent": "Affiche le total d'éléments, le nombre de lots créés et la liste séquentielle avec Début, Fin et Quantité par lot.",
+  "helpExampleTitle": "Exemple",
+  "helpExampleContent": "Plage : 1 à 100 en 3 lots\nLot 1 : 1 - 34 (34 éléments)\nLot 2 : 35 - 67 (33 éléments)\nLot 3 : 68 - 100 (33 éléments).",
+  "helpLimitsTitle": "Validations et limites",
+  "helpLimitsContent": "Outil de partitionnement mathématique en nombres entiers. N'exécute aucun travail en tâche de fond ni transaction de base de données.",
+  "helpDataAndPrivacyTitle": "Données locales et publicités",
+  "helpDataAndPrivacyContent": "Tous les calculs sont effectués localement sans internet. Une bannière standard AdMob est affichée en bas."
 }
